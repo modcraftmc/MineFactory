@@ -1,4 +1,4 @@
-Satisfactory reproduction in mincraft ! 
+Satisfactory reproduction in minecraft ! 
 
 Supported version : 
  - 1.15.2
