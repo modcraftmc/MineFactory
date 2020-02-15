@@ -1,0 +1,5 @@
+{
+  "variants": {
+      "normal": { "model": "sc:portable_miner" }
+  }
+}
