@@ -7,6 +7,7 @@ import ma.forix.industriesandmore.blocks.firstblock.FirstBlockTile;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMiner;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMinerContainer;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMinerTile;
+import ma.forix.industriesandmore.blocks.workbench.Workbench;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.registries.ObjectHolder;
@@ -35,4 +36,10 @@ public class ModBlocks {
 
     @ObjectHolder(IndustriesAndMore.MOD_ID+":portable_miner")
     public static ContainerType<PortableMinerContainer> PORTABLE_MINER_CONTAINER;
+
+
+    //WORKSHOP
+
+    @ObjectHolder(IndustriesAndMore.MOD_ID+":workbench")
+    public static Workbench WORKBENCH;
 }

@@ -7,6 +7,7 @@ import ma.forix.industriesandmore.blocks.ModBlocks;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMiner;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMinerContainer;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMinerTile;
+import ma.forix.industriesandmore.blocks.workbench.Workbench;
 import ma.forix.industriesandmore.items.DrillHead;
 import ma.forix.industriesandmore.items.FirstItem;
 import ma.forix.industriesandmore.items.IronStick;
@@ -62,6 +63,7 @@ public class IndustriesAndMore {
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
             event.getRegistry().register(new FirstBlock());
             event.getRegistry().register(new PortableMiner());
+            event.getRegistry().register(new Workbench());
         }
 
         @SubscribeEvent
@@ -70,6 +72,7 @@ public class IndustriesAndMore {
                     .group(setup.itemGroup);
             event.getRegistry().register(new BlockItem(ModBlocks.FIRSTBLOCK, properties).setRegistryName("first_block"));
             event.getRegistry().register(new BlockItem(ModBlocks.PORTABLE_MINER, properties).setRegistryName("portable_miner"));
+            event.getRegistry().register(new BlockItem(ModBlocks.WORKBENCH, properties).setRegistryName("workbench"));
 
             event.getRegistry().register(new FirstItem());
             event.getRegistry().register(new MachineFrame());
