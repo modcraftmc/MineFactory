@@ -24,6 +24,7 @@ public class ModBlocks {
     @ObjectHolder(IndustriesAndMore.MOD_ID+":first_block")
     public static ContainerType<FirstBlockContainer> FIRSTBLOCK_CONTAINER;
 
+
     //PORTABLE MINER
 
     @ObjectHolder(IndustriesAndMore.MOD_ID+":portable_miner")

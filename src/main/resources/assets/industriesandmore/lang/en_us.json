@@ -3,5 +3,7 @@
   "item.industriesandmore.first_item": "First Item ",
   "itemGroup.industriesandmore": "Industries & More !",
   "item.industriesandmore.machine_frame": "Machine Frame",
-  "block.industriesandmore.portable_miner": "Portable Miner"
+  "block.industriesandmore.portable_miner": "Portable Miner",
+  "item.industriesandmore.drill_head": "Drill Head",
+  "item.industriesandmore.iron_stick": "Iron Stick"
 }

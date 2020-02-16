@@ -7,7 +7,9 @@ import ma.forix.industriesandmore.blocks.ModBlocks;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMiner;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMinerContainer;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMinerTile;
+import ma.forix.industriesandmore.items.DrillHead;
 import ma.forix.industriesandmore.items.FirstItem;
+import ma.forix.industriesandmore.items.IronStick;
 import ma.forix.industriesandmore.items.MachineFrame;
 import ma.forix.industriesandmore.setup.ClientProxy;
 import ma.forix.industriesandmore.setup.IProxy;
@@ -71,6 +73,8 @@ public class IndustriesAndMore {
 
             event.getRegistry().register(new FirstItem());
             event.getRegistry().register(new MachineFrame());
+            event.getRegistry().register(new DrillHead());
+            event.getRegistry().register(new IronStick());
         }
 
         @SubscribeEvent

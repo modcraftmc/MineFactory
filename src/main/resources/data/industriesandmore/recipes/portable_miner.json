@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " I ",
+        "iIi",
+        "i#i"
+    ],
+    "key": {
+        "#": {
+            "item": "industriesandmore:drill_head"
+        },
+        "i": {
+            "item": "industriesandmore:iron_stick"
+        },
+        "I": {
+            "item": "industriesandmore:machine_frame"
+        }
+    },
+    "result": {
+        "item": "industriesandmore:portable_miner",
+        "count": 1
+    }
+}
