@@ -2,6 +2,6 @@
   "block.industriesandmore.first_block": "First Block !",
   "item.industriesandmore.first_item": "First Item ",
   "itemGroup.industriesandmore": "Industries & More !",
-  "block.industriesandmore.machine_frame": "Machine Frame",
+  "item.industriesandmore.machine_frame": "Machine Frame",
   "block.industriesandmore.portable_miner": "Portable Miner"
 }

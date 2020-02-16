@@ -67,7 +67,7 @@ public class PortableMinerContainer extends Container {
                 }
                 slot.onSlotChange(stack, itemstack);
             } else {
-                if (stack.getItem() == Items.DIAMOND) {
+                if (stack.getItem() == Items.COAL) {
                     if (!this.mergeItemStack(stack, 0, 1, false)) {
                         return ItemStack.EMPTY;
                     }

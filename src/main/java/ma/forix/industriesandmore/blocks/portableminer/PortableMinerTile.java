@@ -4,6 +4,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.INamedContainerProvider;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
@@ -28,6 +29,8 @@ public class PortableMinerTile extends TileEntity implements ITickableTileEntity
 
     private LazyOptional<IItemHandler> handler = LazyOptional.of(this::createHandler);
 
+    private int counter;
+
     public PortableMinerTile() {
         super(PORTABLE_MINER_TILE);
     }
@@ -39,7 +42,15 @@ public class PortableMinerTile extends TileEntity implements ITickableTileEntity
 
     @Override
     public void tick() {
-
+        if (!(counter > 0)) {
+            handler.ifPresent(h -> {
+                h.insertItem(0, new ItemStack(Items.IRON_ORE), false);
+                System.out.println("j'y suis !");
+                counter = 20;
+            });
+        } else {
+            counter --;
+        }
     }
 
     @Override
@@ -62,13 +73,13 @@ public class PortableMinerTile extends TileEntity implements ITickableTileEntity
         return new ItemStackHandler(1){
             @Override
             public boolean isItemValid(int slot, @Nonnull ItemStack stack) {
-                return (stack.getItem() == Items.COAL) || (stack.getItem() == Items.CHARCOAL) || (stack.getItem() == Items.COAL_BLOCK) || (stack.getItem() == Items.OAK_LOG);
+                return (stack.getItem() == Items.IRON_ORE);
             }
 
             @Nonnull
             @Override
             public ItemStack insertItem(int slot, @Nonnull ItemStack stack, boolean simulate) {
-                if ((stack.getItem() != Items.COAL) || (stack.getItem() != Items.CHARCOAL) || (stack.getItem() != Items.COAL_BLOCK) || (stack.getItem() != Items.OAK_LOG))
+                if ((stack.getItem() != Items.IRON_ORE))
                     return stack;
                 return super.insertItem(slot, stack, simulate);
             }

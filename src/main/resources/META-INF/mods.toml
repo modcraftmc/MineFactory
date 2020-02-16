@@ -26,7 +26,7 @@ logoFile="industriesandmore.png" #optional
 # A text field displayed in the mod UI
 credits="Thanks for this example mod goes to Java" #optional
 # A text field displayed in the mod UI
-authors="Forix" #optional
+authors="[Forix, ManugameCYKABLYAT]" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 1.15.2 mod created by Forix in purpose to learn how to create minecraft mods. CHEH

@@ -4,7 +4,6 @@ import ma.forix.industriesandmore.IndustriesAndMore;
 import ma.forix.industriesandmore.blocks.firstblock.FirstBlock;
 import ma.forix.industriesandmore.blocks.firstblock.FirstBlockContainer;
 import ma.forix.industriesandmore.blocks.firstblock.FirstBlockTile;
-import ma.forix.industriesandmore.blocks.machineframe.MachineFrame;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMiner;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMinerContainer;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMinerTile;
@@ -24,11 +23,6 @@ public class ModBlocks {
 
     @ObjectHolder(IndustriesAndMore.MOD_ID+":first_block")
     public static ContainerType<FirstBlockContainer> FIRSTBLOCK_CONTAINER;
-
-    //MACHINE FRAME
-
-    @ObjectHolder(IndustriesAndMore.MOD_ID+":machine_frame")
-    public static MachineFrame MACHINE_FRAME;
 
     //PORTABLE MINER
 

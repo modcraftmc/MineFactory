@@ -25,7 +25,7 @@ public class PortableMinerScreen extends ContainerScreen<PortableMinerContainer>
 
     @Override
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-        drawString(Minecraft.getInstance().fontRenderer, "Burn rate: 0", 10, 10, 0x00ffff);
+        drawString(Minecraft.getInstance().fontRenderer, "Burn rate: 0", 62, 10, 0x00ffff);
     }
 
     @Override

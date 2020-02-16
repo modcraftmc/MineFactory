@@ -4,11 +4,11 @@ import ma.forix.industriesandmore.blocks.firstblock.FirstBlock;
 import ma.forix.industriesandmore.blocks.firstblock.FirstBlockContainer;
 import ma.forix.industriesandmore.blocks.firstblock.FirstBlockTile;
 import ma.forix.industriesandmore.blocks.ModBlocks;
-import ma.forix.industriesandmore.blocks.machineframe.MachineFrame;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMiner;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMinerContainer;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMinerTile;
 import ma.forix.industriesandmore.items.FirstItem;
+import ma.forix.industriesandmore.items.MachineFrame;
 import ma.forix.industriesandmore.setup.ClientProxy;
 import ma.forix.industriesandmore.setup.IProxy;
 import ma.forix.industriesandmore.setup.ModSetup;
@@ -59,7 +59,6 @@ public class IndustriesAndMore {
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
             event.getRegistry().register(new FirstBlock());
-            event.getRegistry().register(new MachineFrame());
             event.getRegistry().register(new PortableMiner());
         }
 
@@ -68,10 +67,10 @@ public class IndustriesAndMore {
             Item.Properties properties = new Item.Properties()
                     .group(setup.itemGroup);
             event.getRegistry().register(new BlockItem(ModBlocks.FIRSTBLOCK, properties).setRegistryName("first_block"));
-            event.getRegistry().register(new BlockItem(ModBlocks.MACHINE_FRAME, properties).setRegistryName("machine_frame"));
             event.getRegistry().register(new BlockItem(ModBlocks.PORTABLE_MINER, properties).setRegistryName("portable_miner"));
 
             event.getRegistry().register(new FirstItem());
+            event.getRegistry().register(new MachineFrame());
         }
 
         @SubscribeEvent
