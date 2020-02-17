@@ -12,7 +12,7 @@ issueTrackerURL="http://my.issue.tracker/" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
-modId="industriesandmore" #mandatory
+modId="minefactory" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 version="${file.jarVersion}" #mandatory
  # A display name for the mod
@@ -22,7 +22,7 @@ updateJSONURL="http://myurl.me/" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
 displayURL="http://example.com/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="industriesandmore.png" #optional
+logoFile="minefactory.png" #optional
 # A text field displayed in the mod UI
 credits="Thanks for this example mod goes to Java" #optional
 # A text field displayed in the mod UI
@@ -34,7 +34,7 @@ description='''
 C'était tout, merci.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.industriesandmore]] #optional
+[[dependencies.minefactory]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -46,7 +46,7 @@ C'était tout, merci.
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.industriesandmore]]
+[[dependencies.minefactory]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.15.2]"
