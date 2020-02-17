@@ -10,11 +10,11 @@
             "item": "minecraft:iron_ingot"
         },
         "B": {
-            "item": "industriesandmore:iron_stick"
+            "item": "minefactory:iron_stick"
         }
     },
     "result": {
-        "item": "industriesandmore:drill_head",
+        "item": "minefactory:drill_head",
         "count": 1
     }
 }

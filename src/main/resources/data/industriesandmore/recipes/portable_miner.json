@@ -7,17 +7,17 @@
     ],
     "key": {
         "#": {
-            "item": "industriesandmore:drill_head"
+            "item": "minefactory:drill_head"
         },
         "i": {
-            "item": "industriesandmore:iron_stick"
+            "item": "minefactory:iron_stick"
         },
         "I": {
-            "item": "industriesandmore:machine_frame"
+            "item": "minefactory:machine_frame"
         }
     },
     "result": {
-        "item": "industriesandmore:portable_miner",
+        "item": "minefactory:portable_miner",
         "count": 1
     }
 }

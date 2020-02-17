@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "minefactory:block/first_block",
+    "down": "minefactory:block/first_block",
+    "up": "minefactory:block/first_block",
+    "east": "minefactory:block/first_block",
+    "west": "minefactory:block/first_block",
+    "north": "minefactory:block/first_block_front",
+    "south": "minefactory:block/first_block"
+  }
+}

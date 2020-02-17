@@ -1,0 +1,11 @@
+{
+  "block.minefactory.first_block": "First Block !",
+  "item.minefactory.first_item": "First Item ",
+  "itemGroup.minefactory": "Industries & More !",
+  "item.minefactory.machine_frame": "Machine Frame",
+  "block.minefactory.portable_miner": "Portable Miner",
+  "item.minefactory.drill_head": "Drill Head",
+  "item.minefactory.iron_stick": "Iron Stick",
+  "block.minefactory.test_block": "Test Block",
+  "block.minefactory.workbench": "Workbench"
+}

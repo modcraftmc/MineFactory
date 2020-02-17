@@ -1,0 +1,11 @@
+{
+  "block.minefactory.first_block": "Premier Block",
+  "item.minefactory.first_item": "Premier Item",
+  "itemGroup.minefactory": "MineFactory",
+  "item.minefactory.machine_frame": "Cadre de machine",
+  "block.minefactory.portable_miner": "Mineur portable",
+  "item.minefactory.drill_head": "Tête de foret",
+  "item.minefactory.iron_stick": "Bâton en fer",
+  "block.minefactory.test_block": "Block Test",
+  "block.minefactory.workbench": "Table de travail"
+}

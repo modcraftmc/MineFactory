@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north" : {"model": "minefactory:block/first_block"},
+    "facing=south" : {"model": "minefactory:block/first_block", "y": 180},
+    "facing=west" : {"model": "minefactory:block/first_block", "y": 270},
+    "facing=east" : {"model": "minefactory:block/first_block", "y": 90},
+    "facing=up" : {"model": "minefactory:block/first_block", "x": -90},
+    "facing=down" : {"model": "minefactory:block/first_block", "x": 90}
+  }
+}
