@@ -5,5 +5,6 @@
   "item.industriesandmore.machine_frame": "Machine Frame",
   "block.industriesandmore.portable_miner": "Portable Miner",
   "item.industriesandmore.drill_head": "Drill Head",
-  "item.industriesandmore.iron_stick": "Iron Stick"
+  "item.industriesandmore.iron_stick": "Iron Stick",
+  "block.industriesandmore.test_block": "Test Block"
 }

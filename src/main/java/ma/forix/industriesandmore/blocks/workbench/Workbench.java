@@ -22,7 +22,7 @@ public class Workbench extends Block {
         setRegistryName("workbench");
     }
 
-    /*@Override
+    @Override
     public void onBlockPlacedBy(World world, BlockPos pos, BlockState state, @Nullable LivingEntity entity, ItemStack stack) {
         if (entity != null){
             world.setBlockState(pos, state.with(BlockStateProperties.FACING, getFacingFromEntity(pos, entity)), 2);
@@ -31,5 +31,5 @@ public class Workbench extends Block {
 
     public static Direction getFacingFromEntity(BlockPos clickedBloc, LivingEntity entity){
         return Direction.getFacingFromVector((float) (entity.lastTickPosX - clickedBloc.getX()), (float) (entity.lastTickPosY - clickedBloc.getY()), (float) (entity.lastTickPosZ - clickedBloc.getZ()));
-    }*/
+    }
 }

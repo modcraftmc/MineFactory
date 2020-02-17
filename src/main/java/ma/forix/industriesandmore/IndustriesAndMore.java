@@ -7,6 +7,7 @@ import ma.forix.industriesandmore.blocks.ModBlocks;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMiner;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMinerContainer;
 import ma.forix.industriesandmore.blocks.portableminer.PortableMinerTile;
+import ma.forix.industriesandmore.blocks.testblock.TestBlock;
 import ma.forix.industriesandmore.blocks.workbench.Workbench;
 import ma.forix.industriesandmore.items.DrillHead;
 import ma.forix.industriesandmore.items.FirstItem;
@@ -21,6 +22,7 @@ import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntityType;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.extensions.IForgeContainerType;
@@ -30,6 +32,7 @@ import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.network.NetworkRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -64,6 +67,7 @@ public class IndustriesAndMore {
             event.getRegistry().register(new FirstBlock());
             event.getRegistry().register(new PortableMiner());
             event.getRegistry().register(new Workbench());
+            event.getRegistry().register(new TestBlock());
         }
 
         @SubscribeEvent
@@ -73,6 +77,7 @@ public class IndustriesAndMore {
             event.getRegistry().register(new BlockItem(ModBlocks.FIRSTBLOCK, properties).setRegistryName("first_block"));
             event.getRegistry().register(new BlockItem(ModBlocks.PORTABLE_MINER, properties).setRegistryName("portable_miner"));
             event.getRegistry().register(new BlockItem(ModBlocks.WORKBENCH, properties).setRegistryName("workbench"));
+            event.getRegistry().register(new BlockItem(ModBlocks.TEST_BLOCK, properties).setRegistryName("test_block"));
 
             event.getRegistry().register(new FirstItem());
             event.getRegistry().register(new MachineFrame());

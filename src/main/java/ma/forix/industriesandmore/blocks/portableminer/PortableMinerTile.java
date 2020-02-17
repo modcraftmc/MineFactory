@@ -12,6 +12,7 @@ import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.INBTSerializable;
 import net.minecraftforge.common.util.LazyOptional;
@@ -37,7 +38,7 @@ public class PortableMinerTile extends TileEntity implements ITickableTileEntity
 
     @Override
     public ITextComponent getDisplayName() {
-        return null;
+        return new StringTextComponent(getType().getRegistryName().getPath());
     }
 
     @Override
@@ -45,7 +46,6 @@ public class PortableMinerTile extends TileEntity implements ITickableTileEntity
         if (!(counter > 0)) {
             handler.ifPresent(h -> {
                 h.insertItem(0, new ItemStack(Items.IRON_ORE), false);
-                System.out.println("j'y suis !");
                 counter = 20;
             });
         } else {
